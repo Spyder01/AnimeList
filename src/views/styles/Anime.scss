@@ -1,0 +1,48 @@
+$containerWidth: 60vw;
+$imageHeight: 500px;
+
+.Page-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .anime {
+        display: flex;
+        width: $containerWidth;
+        flex-direction: column;
+
+        .anime-header {
+            display: flex;
+            flex-direction: column;
+            .anime-images-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                height: $imageHeight;
+                width: 100%;
+
+                .image-1 {
+                    height: inherit;
+                    border: 1px solid gray;
+
+                    img {
+                        height: inherit;
+                    }
+                }
+
+                .image-2 {
+                    height: inherit;
+                    grid-column: 2/3;
+                    width:100%;
+                    img {
+                        height: inherit;
+                        width: inherit;
+                        object-fit: cover;
+
+                    }
+                }
+            }
+        }
+    }
+
+}

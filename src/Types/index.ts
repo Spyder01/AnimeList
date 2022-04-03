@@ -15,8 +15,22 @@ interface CardType {
     route: string;
 }
 
+interface MovieType {
+    id: string;
+    title: string;
+    original_title: string;
+    image: string;
+    banner_image: string;
+    rating: number;
+    runTime: number;
+    director: string;
+    producers: string[];
+    description: string;
+}
+
 
 export type {
     CardType,
-    RouteType
+    RouteType,
+    MovieType
 }

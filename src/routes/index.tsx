@@ -6,12 +6,17 @@ import { RouteType } from '../Types';
 
 
 const Home = lazy(() => import('../views'));
+const Anime = lazy(() => import('../views/Anime'));
 
 
 const routes:RouteType[] = [
     {
         path: '/',
         component: Home
+    },
+    {
+        path: '/anime/:id',
+        component: Anime
     }
 ];
 
