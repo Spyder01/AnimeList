@@ -1,4 +1,4 @@
-$containerWidth: 60vw;
+$containerWidth: 1200px;
 $imageHeight: 500px;
 
 .Page-2 {
@@ -15,6 +15,10 @@ $imageHeight: 500px;
         .anime-header {
             display: flex;
             flex-direction: column;
+            .anime-rating {
+                width: 100%;
+                text-align: right;;
+            }
             .anime-images-container {
                 display: grid;
                 grid-template-columns: auto auto auto;
@@ -45,4 +49,90 @@ $imageHeight: 500px;
         }
     }
 
+}
+
+
+@media (max-width: 1300px)  {
+    .Page-2 {
+        .anime {
+            width: $containerWidth*0.9;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.9;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .Page-2 {
+        .anime {
+            width: $containerWidth*0.8;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.8;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .Page-2 {
+        .anime {
+            width: $containerWidth*0.7;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .Page-2 {
+        .anime {
+            width: $containerWidth*0.6;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .Page-2 {
+        .anime {
+            width: 95vw;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Page-2 {
+        .anime {
+            width: 95vw;
+            .anime-header {
+                .anime-images-container {
+                    height: $imageHeight*0.5;
+                    .image-1 {
+                        display: none;
+                    }
+                    .image-2 {
+                        grid-column: 1/3;
+                    }
+                }
+            }
+        }
+    }
 }

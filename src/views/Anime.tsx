@@ -54,7 +54,7 @@ const Page:FC = ()=>{
             <main className="anime">
 
                 <h1 className="title">
-                    {anime.title}
+                    {anime.title}({anime.original_title})
                 </h1>
 
                 <section className="anime-header">
