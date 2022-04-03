@@ -1,0 +1,133 @@
+$big: 375px;
+$small: 320px;
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    margin: 65px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    height: $big;
+    .Card-image {
+        border-radius: 20px;
+        height: inherit;
+        width: auto;
+        img {
+            height: 100%;
+            border-radius: inherit;
+            width: inherit;
+        }
+    }   
+    .Card-title {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    &:hover, &:active {
+        transform: scale(1.05);
+        .Card-title {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@media (max-width: 880px) {
+    .Card {
+        margin: 45px 10px;
+        height: $small;
+        .Card-image {
+            height: inherit;
+            width: inherit;
+            img {
+                height: 100%;
+                width: inherit;
+            }
+        }
+        .Card-title {
+            font-size: 1.1rem;
+            width: inherit;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .Card {
+        margin: 56px 10px;
+        height: $small*0.8;
+        .Card-image {
+            height: inherit;
+            width: inherit;
+            img {
+                height: 100%;
+                width: inherit;
+            }
+        }
+        .Card-title {
+            font-size: 1.1rem;
+            width: inherit;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .Card {
+        margin: 45px 10px;
+        height: $big*0.9;
+        .Card-image {
+            height: inherit;
+            width: inherit;
+            img {
+                height: 100%;
+                width: inherit;
+            }
+        }
+        .Card-title {
+            font-size: 1.2rem;
+            width: inherit;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Card {
+        margin: 45px 10px;
+        height: $small*0.8;
+        .Card-image {
+            height: inherit;
+            width: inherit;
+            img {
+                height: 100%;
+                width: inherit;
+            }
+        }
+        .Card-title {
+            font-size: 1.2rem;
+            width: inherit;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .Card {
+        margin: 45px 10px;
+        height: $big*1.1;
+        .Card-image {
+            height: inherit;
+            width: inherit;
+            img {
+                height: 100%;
+                width: inherit;
+            }
+        }
+        .Card-title {
+            font-size: 1.2rem;
+            width: inherit;
+        }
+    }
+}
