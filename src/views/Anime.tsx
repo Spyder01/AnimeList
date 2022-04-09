@@ -60,7 +60,7 @@ const Page:FC = ()=>{
                 <section className="anime-header">
 
                     <div className="anime-rating">
-                        {anime.rating}/100
+                     Movie Score:    {anime.rating}/100
                     </div>
 
                     <div className="anime-images-container">
